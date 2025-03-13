@@ -1,0 +1,6 @@
+streamlit
+google-generativeaipip install -r requirements.txt
+
+gcloud builds submit --tag gcr.io/smartresume-453310/smartresume
+gcloud run deploy smartresume --image gcr.io/smartresume-453310/smartresume --platform managed --allow-unauthenticated
+
